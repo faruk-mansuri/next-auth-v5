@@ -7,7 +7,7 @@ import { currentUser } from '@/lib/auth';
 import { sendVerificationEmail } from '@/lib/mail';
 import { db } from '@/lib/prismadb';
 import { generateVerificationToken } from '@/lib/tokens';
-import { unstable_update } from '@/auth';
+import { update } from '@/auth';
 
 export const settings = async (values) => {
   const user = await currentUser();
@@ -64,7 +64,7 @@ export const settings = async (values) => {
   });
 
   // SERVER UPDATE
-  unstable_update({
+  update({
     user: {
       name: updatedUser.name,
       email: updatedUser.email,
