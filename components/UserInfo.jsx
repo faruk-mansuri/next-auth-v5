@@ -1,7 +1,10 @@
 import { Card, CardContent, CardHeader } from './ui/card';
 import { Badge } from './ui/badge';
+import LoadingSpinner from './LoadingSpinner';
 
 const UserInfo = ({ user, label }) => {
+  if (!user) return <LoadingSpinner />;
+
   return (
     <Card className='w-[500px] lg:w-[600px] shadow-md'>
       <CardHeader>
