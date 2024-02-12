@@ -22,11 +22,7 @@ const HomePage = () => {
         </h1>
         <p className='text-white text-lg'>A simple authentication service</p>
         <div>
-          <LoginButton mode='modal'>
-            <Button variant='secondary' size='lg'>
-              Sign in
-            </Button>
-          </LoginButton>
+          <LoginButton />
         </div>
       </div>
     </main>
