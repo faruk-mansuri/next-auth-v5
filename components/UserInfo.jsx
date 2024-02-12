@@ -1,10 +1,9 @@
 import { Card, CardContent, CardHeader } from './ui/card';
 import { Badge } from './ui/badge';
-import LoadingSpinner from './LoadingSpinner';
 
 const UserInfo = ({ user, label }) => {
   return (
-    <Card className='w-[500px] lg:w-[600px] shadow-md'>
+    <Card className='w-[420px] md:w-[600px] shadow-md'>
       <CardHeader>
         <p className='text-2xl font-semibold text-center'>{label}</p>
       </CardHeader>

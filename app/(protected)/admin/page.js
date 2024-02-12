@@ -31,7 +31,7 @@ const AdminPage = () => {
   };
 
   return (
-    <Card className='w-[500px] lg:w-[600px]'>
+    <Card className='w-[420px] md:w-[600px]'>
       <CardHeader>
         <p className='text-2xl font-semibold text-center'>🔑 Admin</p>
       </CardHeader>
